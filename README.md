@@ -1,0 +1,2 @@
+# bobotik
+Statistic simulation
