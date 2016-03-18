@@ -1,0 +1,234 @@
+<!-- Wahyu Prihantoro
+Ilmu Komputer - Universitas Indonesia
+085642710751 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kegiatan Rutin di Fasilkom">
+		<meta name="author" content="Wahyu Prihantoro">
+		<meta http-equiv="refresh" content="1500">
+		<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+		<link id="linkCss" rel="stylesheet" type="text/css" href="CSS/style.css">
+		<script type="text/javascript" src="javascript/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="javascript/scripts.js"></script>
+		<title>Bobotik</title>		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+		  	<div class="container">
+		    	<div class="navbar-header">
+		      		<a class="navbar-brand" href="#">BOBOTIK</a>
+		   	 	</div>
+		    	<div>
+		      		<ul class="nav navbar-nav">
+		        		<!-- <li class="active"><a href="#">Home</a></li> -->
+				        <li id="index"><a href="index.html">Tunggal</a></li>
+				        <li id="kelompok"><a href="datakelompok.html">Kelompok</a></li>
+				        <li id="materi"><a href="materi.html">Materi</a></li>
+				        <li id="latihan"><a href="latihan.html">Latihan</a></li>
+		      		</ul>
+		    	</div>
+		  	</div>
+		</nav>
+		<div class="container">	
+			<div id="log" class="row">
+				<div class="col-sm-2">
+					<!-- //<button type="submit" class="btn btn-primary" onclick="clear()" >Clear data</button> -->
+				<button onclick="clearData()" class="btn btn-danger" type="submit">Clear data</button><br>
+				<button onclick="mean()" class="btn btn-info" type="submit">Mean</button><br>
+				<button onclick="mode()" class="btn btn-success" type="submit">Mode</button><br>
+				<button onclick="median()" class="btn btn-primary" type="submit">Median</button>
+				</div>
+				<div  class="col-sm-6">
+					<table>
+						<tr>
+						    <td height="50px">10</td>
+						    <td><img id="img1-10" src="images/ball1.png"></td>
+						    <td><img id="img2-10"  src="images/ball1.png"></td>
+						    <td><img id="img3-10"  src="images/ball1.png"></td>
+						    <td><img id="img4-10" src="images/ball1.png"></td>
+						    <td><img id="img5-10"  src="images/ball1.png"></td>
+						    <td><img id="img6-10"  src="images/ball1.png"></td>
+						    <td><img id="img7-10"  src="images/ball1.png"></td>
+						    <td><img id="img8-10"  src="images/ball1.png"></td>
+						    <td><img id="img9-10"  src="images/ball1.png"></td>
+						    <td><img id="img10-10"  src="images/ball1.png"></td>	    
+						</tr>
+						<tr>
+							<td height="50px">9</td>
+						    <td><img id="img1-9" src="images/ball2.png"></td>
+						    <td><img id="img2-9" src="images/ball2.png"></td>
+						    <td><img id="img3-9" src="images/ball2.png"></td>
+						    <td><img id="img4-9" src="images/ball2.png"></td>
+						    <td><img id="img5-9" src="images/ball2.png"></td>
+						    <td><img id="img6-9" src="images/ball2.png"></td>
+						    <td><img id="img7-9" src="images/ball2.png"></td>
+						    <td><img id="img8-9" src="images/ball2.png"></td>
+						    <td><img id="img9-9" src="images/ball2.png"></td>
+						    <td><img id="img10-9" src="images/ball2.png"></td>
+  						</tr><tr>
+							<td height="50px">8</td>
+
+						    <td><img id="img1-8" src="images/ball3.png"></td>
+						    <td><img id="img2-8" src="images/ball3.png"></td>
+						    <td><img id="img3-8" src="images/ball3.png"></td>
+						    <td><img id="img4-8" src="images/ball3.png"></td>
+						    <td><img id="img5-8" src="images/ball3.png"></td>
+						    <td><img id="img6-8" src="images/ball3.png"></td>
+						    <td><img id="img7-8" src="images/ball3.png"></td>
+						    <td><img id="img8-8" src="images/ball3.png"></td>
+						    <td><img id="img9-8" src="images/ball3.png"></td>
+						    <td><img id="img10-8" src="images/ball3.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">7</td>
+
+						    <td><img id="img1-7" src="images/ball4.png"></td>
+						    <td><img id="img2-7" src="images/ball4.png"></td>
+						    <td><img id="img3-7" src="images/ball4.png"></td>
+						    <td><img id="img4-7" src="images/ball4.png"></td>
+						    <td><img id="img5-7" src="images/ball4.png"></td>
+						    <td><img id="img6-7" src="images/ball4.png"></td>
+						    <td><img id="img7-7" src="images/ball4.png"></td>
+						    <td><img id="img8-7" src="images/ball4.png"></td>
+						    <td><img id="img9-7" src="images/ball4.png"></td>
+						    <td><img id="img10-7" src="images/ball4.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">6</td>
+
+						    <td><img id="img1-6" src="images/ball5.png"></td>
+						    <td><img id="img2-6" src="images/ball5.png"></td>
+						    <td><img id="img3-6" src="images/ball5.png"></td>
+						    <td><img id="img4-6" src="images/ball5.png"></td>
+						    <td><img id="img5-6" src="images/ball5.png"></td>
+						    <td><img id="img6-6" src="images/ball5.png"></td>
+						    <td><img id="img7-6" src="images/ball5.png"></td>
+						    <td><img id="img8-6" src="images/ball5.png"></td>
+						    <td><img id="img9-6" src="images/ball5.png"></td>
+						    <td><img id="img10-6" src="images/ball5.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">5</td>
+
+						    <td><img id="img1-5" src="images/ball6.png"></td>
+						    <td><img id="img2-5" src="images/ball6.png"></td>
+						    <td><img id="img3-5" src="images/ball6.png"></td>
+						    <td><img id="img4-5" src="images/ball6.png"></td>
+						    <td><img id="img5-5" src="images/ball6.png"></td>
+						    <td><img id="img6-5" src="images/ball6.png"></td>
+						    <td><img id="img7-5" src="images/ball6.png"></td>
+						    <td><img id="img8-5" src="images/ball6.png"></td>
+						    <td><img id="img9-5" src="images/ball6.png"></td>
+						    <td><img id="img10-5" src="images/ball6.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">4</td>
+
+						    <td><img id="img1-4" src="images/ball7.png"></td>
+						    <td><img id="img2-4" src="images/ball7.png"></td>
+						    <td><img id="img3-4" src="images/ball7.png"></td>
+						    <td><img id="img4-4" src="images/ball7.png"></td>
+						    <td><img id="img5-4" src="images/ball7.png"></td>
+						    <td><img id="img6-4" src="images/ball7.png"></td>
+						    <td><img id="img7-4" src="images/ball7.png"></td>
+						    <td><img id="img8-4" src="images/ball7.png"></td>
+						    <td><img id="img9-4" src="images/ball7.png"></td>
+						    <td><img id="img10-4" src="images/ball7.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">3</td>
+
+						    <td><img id="img1-3" src="images/ball8.png"></td>
+						    <td><img id="img2-3" src="images/ball8.png"></td>
+						    <td><img id="img3-3" src="images/ball8.png"></td>
+						    <td><img id="img4-3" src="images/ball8.png"></td>
+						    <td><img id="img5-3" src="images/ball8.png"></td>
+						    <td><img id="img6-3" src="images/ball8.png"></td>
+						    <td><img id="img7-3" src="images/ball8.png"></td>
+						    <td><img id="img8-3" src="images/ball8.png"></td>
+						    <td><img id="img9-3" src="images/ball8.png"></td>
+						    <td><img id="img10-3" src="images/ball8.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">2</td>
+
+						   <td><img id="img1-2" src="images/ball9.png"></td>
+						    <td><img id="img2-2" src="images/ball9.png"></td>
+						    <td><img id="img3-2" src="images/ball9.png"></td>
+						    <td><img id="img4-2" src="images/ball9.png"></td>
+						    <td><img id="img5-2" src="images/ball9.png"></td>
+						    <td><img id="img6-2" src="images/ball9.png"></td>
+						    <td><img id="img7-2" src="images/ball9.png"></td>
+						    <td><img id="img8-2" src="images/ball9.png"></td>
+						    <td><img id="img9-2" src="images/ball9.png"></td>
+						    <td><img id="img10-2" src="images/ball9.png"></td>
+  						</tr>
+  						<tr>
+							<td height="50px">1</td>
+
+						    <td><img id="img1-1" src="images/ball10.png"></td>
+						    <td><img id="img2-1" src="images/ball10.png"></td>
+						    <td><img id="img3-1" src="images/ball10.png"></td>
+						    <td><img id="img4-1" src="images/ball10.png"></td>
+						    <td><img id="img5-1" src="images/ball10.png"></td>
+						    <td><img id="img6-1" src="images/ball10.png"></td>
+						    <td><img id="img7-1" src="images/ball10.png"></td>
+						    <td><img id="img8-1" src="images/ball10.png"></td>
+						    <td><img id="img9-1" src="images/ball10.png"></td>
+						    <td><img id="img10-1" src="images/ball10.png"></td>
+  						</tr>
+						<tr>
+						    <th width="50px"></th>
+						    <th width="50px">Data1</th>
+						    <th width="50px">Data2</th>
+						    <th width="50px">Data3</th>
+						    <th width="50px">Data4</th>
+						    <th width="50px">Data5</th>
+						    <th width="50px">Data6</th>
+						    <th width="50px" >Data7</th>
+						    <th width="50px">Data8</th>
+						    <th width="50px">Data9</th>
+						    <th width="50px">Data10</th>
+						</tr>
+						<tr>
+						    <th></th>
+
+						    <th><button onclick="addData(1)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(2)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(3)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(4)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(5)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(6)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(7)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(8)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(9)" class="btn btn-success" type="button">+</button></th>
+						    <th><button onclick="addData(10)" class="btn btn-success" type="button">+</button></th>
+						</tr>
+						<tr>
+						    <th></th>
+
+						    <th><button onclick="removeData(1)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(2)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(3)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(4)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(5)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(6)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(7)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(8)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(9)" class="btn btn-danger" type="button">-</button></th>
+						    <th><button onclick="removeData(10)" class="btn btn-danger" type="button">-</button></th>
+						</tr>
+					</table>	
+				</div>
+				<div class="col-sm-4">
+					
+					<h3 id="hasil">
+						
+					</h3>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
